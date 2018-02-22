@@ -31,8 +31,6 @@ var quotes = [
 
 ];
 
-
-
 //Generates a random number and returns one of the quotes in the quotes array
 function getRandomQuote () {
   return quotes[Math.floor(Math.random() * quotes.length)]
@@ -57,7 +55,7 @@ var getQuote = getRandomQuote();
     }
 
     //Checks if the tags object is undefined, if it is not
-    //undefined it adds the citation object from the tags array
+    //undefined it adds the tags object from the quotes array
     if (getQuote.tags !== undefined) {
       quoteToPrint += ', ' + getQuote.tags;
     }
